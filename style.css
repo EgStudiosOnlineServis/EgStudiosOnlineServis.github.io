@@ -43,18 +43,57 @@ nav a.active, nav a:hover {
     text-align: center;
     background-color: #12141c;
 }
-.support-box {
+.support-container {
+    max-width: 600px;
+    margin: 40px auto;
     background-color: #1f2833;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 8px;
+    padding: 40px;
+    border-radius: 12px;
     border: 1px solid #45f3ff;
-    box-shadow: 0 4px 15px rgba(69, 243, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(69, 243, 255, 0.05);
+    text-align: left;
 }
-.support-box h3 {
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
     color: #ffffff;
-    margin-top: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b0c10;
+    border: 1px solid #c5c6c7;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #45f3ff;
+    box-shadow: 0 0 8px rgba(69, 243, 255, 0.2);
+}
+.submit-btn {
+    width: 100%;
+    background-color: #45f3ff;
+    color: #0b0c10;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(69, 243, 255, 0.3);
+    transform: translateY(-2px);
 }
 footer {
     text-align: center;
