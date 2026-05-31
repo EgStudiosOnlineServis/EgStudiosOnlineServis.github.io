@@ -22,11 +22,38 @@
 
     <section id="support" class="support-section">
         <h2>EG Store Destek Merkezi</h2>
-        <p>Hesap açarken, giriş yaparken veya oyun indirirken bir sorun mu yaşıyorsunuz? Doğrudan bizimle iletişime geçin.</p>
-        <div class="support-box">
-            <h3>Bize Ulaşın</h3>
-            <p><strong>E-Posta:</strong> egstudioiletisim@gmail.com</p>
-            <p>7/24 destek ekibimiz sorunlarınızı çözmek için burada.</p>
+        <p>Hesap açarken, giriş yaparken veya oyun indirirken bir sorun mu yaşıyorsunuz? Formu doldurarak destek ekibimize anında ulaşabilirsiniz.</p>
+        
+        <div class="support-container">
+            <form action="https://formspree.io/f/FORM_ID" method="POST" class="support-form">
+                <div class="form-group">
+                    <label for="name">Kullanıcı Adı / Adınız</label>
+                    <input type="text" id="name" name="name" required placeholder="Geliştirici adınız veya isminiz">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-Posta Adresiniz</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="Size ulaşabileceğimiz e-posta">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Sorun Yaşadığınız Kategori</label>
+                    <select id="subject" name="category" required>
+                        <option value="" disabled selected>Lütfen bir konu seçin</option>
+                        <option value="Giriş / Kayıt Sorunu">Giriş / Kayıt Sorunları</option>
+                        <option value="Oyun İndirme / APK">Oyun İndirme ve Güncelleme</option>
+                        <option value="Hata Bildirimi (Bug)">Hata Bildirimi (Bug Report)</option>
+                        <option value="Diğer">Diğer Sorunlar</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mesajınız</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Yaşadığınız sorunu detaylıca açıklayın..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Destek Talebi Gönder</button>
+            </form>
         </div>
     </section>
 
@@ -34,4 +61,4 @@
         <p>&copy; 2026 EG Studios. Tüm Hakları Saklıdır.</p>
     </footer>
 </body>
-</html></html>
+</html>
